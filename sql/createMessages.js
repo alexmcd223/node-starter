@@ -13,5 +13,5 @@ const createMessages = `
         archive INTEGER(1) DEFAULT 0 CHECK (archive = 1 or archive = 0),
         FOREIGN KEY (userid) REFERENCES Users(userid) ON DELETE CASCADE
     );
-`
+`;
 module.exports = { createMessages };
